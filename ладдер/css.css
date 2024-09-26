@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #18191C;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+  }
+
+table {
+  width: 300px;
+  border-top: 7px solid rgb(255, 0, 0);
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid hwb(0 52% 48%);
+}
+
+td {
+  text-align: left;
+	padding: 10px;
+	border: 3px solid rgb(107, 107, 107);
+}
+ th {
+  text-align: center;
+  padding: 10px;
+	border: 3px solid rgb(94, 91, 91);
+ }
