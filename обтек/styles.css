@@ -1,0 +1,81 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-image: url('fon.jpg'); /* Укажите путь к вашему изображению */
+    background-size: cover; /* Изображение будет растянуто по всему фону */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.329); /* Полупрозрачный фон контейнера */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Используем Flexbox */
+    justify-content: space-between; /* Пробел между элементами */
+    align-items: flex-start; /* Выровнять по верхнему краю */
+}
+
+.text {
+    width: 60%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hwe {
+    width: 400px;
+    height: auto; 
+	float: left;
+	shape-outside: url(png.png);
+	shape-outside: polygon(25.00% 75px, 93.85% 26.56%, 93.9% 94.56%, 63px 80.57%);
+
+}
+
+.hwr {
+    right: 300px;
+    top: 800px;
+    width: 300px;
+	float: right;
+	shape-outside: url(png2.png);
+	shape-outside: polygon(67.25% -70px, 115.43% 71.55%, 16.65% 104.90%, -48px 55.54%);
+}
+button {
+    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Изменяем курсор на указатель */
+    border-radius: 5px; /* Закругляем углы кнопки */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+}
+
+button:hover {
+    background-color: #45a049; /* Более темный зеленый при наведении */
+    transform: scale(1.05); /* Увеличиваем кнопку при наведении */
+}
