@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Прогноз погоды</title>
+  </head>
+  <body>
+    <div class="current">
+      <h2>Погода прямо сейчас в Алматы</h2>
+      <table>
+        <tr>
+          <td>Температура:</td>
+          <td id="temp"></td>
+        </tr>
+        <tr>
+          <td>Влажность:</td>
+          <td id="humi"></td>
+        </tr>
+        <tr>
+          <td>Скорость ветра:</td>
+          <td id="wind"></td>
+        </tr>
+        <tr>
+          <td>УФ индекс:</td>
+          <td id="uvi"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="weekly">
+      <h2>Прогноз погоды на 7 дней</h2>
+      <table id="weeklyWeatherTable">
+        <thead>
+          <tr>
+            <th>День</th>
+            <th>Температура (°C)</th>
+            <th>Влажность (%)</th>
+            <th>Скорость ветра (м/с)</th>
+          </tr>
+        </thead>
+        <tbody id="weeklyWeatherBody">
+          <!-- Здесь будет прогноз -->
+        </tbody>
+      </table>
+    </div>
+
+    <style>
+      html {
+        display: flex;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .current, .weekly {
+        margin: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+        width: 500px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      td, th {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f0f0f0;
+        text-align: left;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+
+      table tr:hover {
+        background-color: #f1f1f1;
+      }
+    </style>
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
