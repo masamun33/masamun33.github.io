@@ -1,0 +1,111 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    background-image: url('fon.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.26); 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.text {
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+h1 {
+    font-size: 32px;
+    color: #cecece;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.image img,
+.hwr,
+.hwe {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.hwe {
+    float: left;
+    margin-right: 20px;
+}
+
+.hwr {
+    float: right;
+    margin-left: 20px;
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .text, .image2 {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .hwe, .hwr {
+        float: none; 
+        margin: 0 auto;
+        display: block;
+    }
+
+    h1 {
+        font-size: 28px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+
+    button {
+        width: 100%; 
+        padding: 15px;
+        font-size: 18px;
+    }
+}
